@@ -14,7 +14,7 @@ Navigation:
 
 <img width="1440" alt="Näyttökuva 2023-10-4 kello 13 42 28" src="https://github.com/Hienomekaanikko/Phone-fix-bay/assets/121874134/aa2f63aa-6f8f-4574-a39a-3f347ec3c0bd">
 
-Phone-related problem list:
+Phone related problemlist:
 
 <img width="1440" alt="Näyttökuva 2023-10-4 kello 13 42 43" src="https://github.com/Hienomekaanikko/Phone-fix-bay/assets/121874134/b5debe3f-045a-4756-b620-339738dfb398">
 
