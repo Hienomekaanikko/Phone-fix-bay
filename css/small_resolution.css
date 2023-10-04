@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&family=Quicksand:wght@300&family=Rubik:wght@300&display=swap');
+
+html {
+  background-color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Your existing CSS up to header */
+header {
+  padding: 20px;
+  margin-top: 10px;
+  width: 100%;
+  display:flex;
+  justify-content:center;
+}
+
+/* Center the logo horizontally */
+/* Center the logo horizontally */
+header .logo {
+  background-color: #ebbba3;
+  text-decoration: none;
+  font-size: 20px;
+  align-items: center;
+  color: #094b65;
+  margin: 0 auto; /* Center the logo horizontally */
+  display: table; /* Ensure the logo doesn't take full width */
+}
+
+
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #094b65;
+  padding-right: 20px;
+  margin: 0;
+  background: transparent;
+  border: none;
+
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  top: 60px; /* Adjust the top position as needed */
+  right: 20px; /* Adjust the right position as needed */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+  display: flex;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Rest of your CSS... */
+
+
+/* Add media query for smaller screens (e.g., max-width: 600px) */
+  header ul {
+    display: none; /* Hide the navigation links */
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+  }
+
+  /* Show the mobile menu icon */
+  .mobile-menu-icon {
+    display: block;
+    font-size: 24px;
+    color: #094b65;
+    padding-right: 20px;
+    margin: 0; /* Reset margin to avoid extra spacing */
+  }
+
+  /* Style the expanded mobile menu */
+  header ul.active {
+    display: flex;
+  }
+
+/* Remaining CSS styles for sections, searchbox, result-box, etc. */
+
+/* Add media query for smaller screens (e.g., max-width: 600px) */
+  header ul {
+      display: none; /* Hide the navigation links */
+      flex-direction: column; /* Stack items vertically */
+      text-align: center;
+  }
+
+  /* Show the mobile menu icon */
+  .mobile-menu-icon {
+      display: block;
+      font-size: 24px;
+      color: #094b65;
+      padding-right: 30px;;
+  }
+
+  /* Style the expanded mobile menu */
+  header ul.active {
+      display: flex;
+  }
+
+section .sec1::before {
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #df4a4a, transparent);
+    z-index: 10000;
+}
+
+section img {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    object-fit:cover;
+    pointer-events: none;
+
+}
+section #text {
+    position: absolute;
+    color: #094b65;
+    font-size: 4vh;
+    text-align: center;
+    line-height: 0.9em;
+    transform: translateY(-50%);
+}
+
+section #text2 {
+    position: absolute;
+    color: #094b65;
+    font-size: 4vh;
+    text-align: center;
+    line-height: 0.9em;
+    transform: translateY(-50%);
+}
+
+.searchbox {
+    margin-top: 0px;
+    padding: 10px 10px;
+    background: #eae0e0;
+    color:#3d6372;
+    font-size: 1em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    transform: translateY(100px);
+    display: grid;
+    
+}
+
+.searchbox ul li a:hover,
+.searchbox ul li a.active{
+    text-decoration: none;
+    background: #f9fafb;
+    padding: 1px;
+    border-radius: 5px;
+
+}
+.searchbox:hover,
+.searchbox.active {
+    background: #81f908;
+}
+
+.result-box ul{
+    position: fixed;
+    border-top: 10px;
+    padding: 0px 10px;
+    max-height: 250px;
+    overflow-y: scroll;
+    color: #094b65;
+}
+
+.result-box ul li{
+    margin-top: 10px;
+    background-color: #a3d7eb;
+    display: grid;
+    list-style: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    width: 150px;
+
+}
+
+.result-box ul li:hover,
+.result-box ul li.active {
+    color: #094b65;
+    text-decoration: underline;
+    background-color: #81f908;
+
+}
+
+input {
+    float: right;
+    padding: 5px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    background: transparent;
+    border-radius: 5px;
+    color: #094b65;
+  }
+
+.openingpage {
+    width: 100%;
+
+}
+
+ul li:hover ul {display: grid;}
+ul li ul{
+  width: 100px;
+  display: none;
+  font-size: 20px;
+  background-color: #a3d7eb;
+}
+ul li ul li { 
+  display: block; 
+}
+ul li ul li a {display:block !important;} 
+
+
+section #headline {
+    margin-bottom: 40%;
+    position: absolute;
+    color: #094b65;
+    font-size: 5vh;
+    text-align: center;
+    line-height: 0.9em;
+}
+
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #a3d7eb; /* Dark-grey background */
+    overflow: auto; /* Overflow due to float */
+  }
+  
+  .icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 10px 0px; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 20px; /* Increased font size */
+  }
+  
+  .icon-bar a:hover {
+    background-color: #da1919; /* Add a hover color */
+    border-radius: 100px;
+
+  }
+  .modelproblems {
+    display: block;
+  }
+  .modelproblems a {
+    background-color: #eee; /* Grey background color */
+    color: #094b65; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 10px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 10px;
+    font-size: 15px;
+  }
+
+  .issue {
+    margin-top: 30px;
+  }
+  .issue a {
+    background-color: #eee; /* Grey background color */
+    color: #094b65; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 10px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 1px;
+    font-size: 20px;
+  }
+
+  .modelproblems a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+  }
+  
+  .model {
+    display: block;
+    position: relative; 
+    color: #094b65;
+    font-size: 5vh;
+    text-align:start;
+    line-height: 0.9em;
+  }
+  .problemheader {
+        color: #094b65; /* Black text color */
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 30px;
+        margin-top: 50px;
+  }
+
+  .issue {
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  

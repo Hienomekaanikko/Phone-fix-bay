@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&family=Quicksand:wght@300&family=Rubik:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+header {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10000;
+    font-size: 30px;
+}
+
+header .logo {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a slight shadow */
+    background-color: #c1eba3;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #094b65;
+}
+header ul{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Add a slight shadow */
+    background-color: #c1eba3;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+header ul li{
+    
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px
+
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #094b65;
+    border-radius: 5x;
+}
+
+header ul li a:hover,
+header ul li a.after {
+    text-decoration: underline;
+    color: #094b65
+}
+
+section {
+  background-image: url('./background.svg');
+  background-attachment: fixed; /* Keeps the background fixed */
+  background-size: cover; /* Cover the entire section */
+  background-repeat: no-repeat; /* Prevent background from repeating */
+  background-position: center center; /* Center the background */
+  position: relative;
+  overflow-y: hidden;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+
+section img {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  
+    
+
+}
+section #text {
+    position: absolute;
+    color: #094b65;
+    font-size: 5vh;
+    text-align: center;
+    line-height: 0.9em;
+    transform: translateY(-50%);
+}
+
+.searchbox {
+
+    margin-top: 30px;
+    padding: 10px 10px;
+    background: #eae0e0;
+    color:#3d6372;
+    font-size: 1em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    transform: translateY(100px);
+    display: grid;
+    
+}
+
+.searchbox ul li a:hover,
+.searchbox ul li a.active{
+    text-decoration: none;
+    background: #f9fafb;
+    padding: 1px;
+    border-radius: 5px;
+
+}
+.searchbox:hover,
+.searchbox.active {
+    background: #81f908;
+}
+
+.result-box ul{
+    position: fixed;
+    border-top: 10px;
+    padding: 0px 10px;
+    max-height: 250px;
+    overflow-y: scroll;
+    color: #094b65;
+}
+
+.result-box ul li{
+    margin-top: 10px;
+    background-color: #a3d7eb;
+    display: grid;
+    list-style: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    width: 150px;
+
+}
+
+.result-box ul li:hover,
+.result-box ul li.active {
+    color: #094b65;
+    text-decoration: underline;
+
+}
+
+input {
+    float: right;
+    padding: 5px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    background: transparent;
+    border-radius: 5px;
+    color: #094b65;
+  }
+
+.openingpage {
+    width: 100%;
+
+}
+
+ul li {display: inline-block;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 150px;
+  display: none;
+  font-size: 30px;
+}
+ul li ul li { 
+  display: block; 
+}
+ul li ul li a {display:block !important;} 
+
+section #headline {
+    margin-bottom: 40%;
+    position: absolute;
+    color: #094b65;
+    font-size: 5vh;
+    text-align: center;
+    line-height: 0.9em;
+}
+
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #a3d7eb; /* Dark-grey background */
+    overflow: auto; /* Overflow due to float */
+  }
+  
+  .icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 10px 0px; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 20px; /* Increased font size */
+  }
+  
+  .icon-bar a:hover {
+    background-color: #da1919; /* Add a hover color */
+    border-radius: 100px;
+
+  }
+  .modelproblems {
+    display: block;
+  }
+  .modelproblems a {
+    background-color: #eee; /* Grey background color */
+    color: #094b65; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 10px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px;
+    font-size: 20px;
+  }
+
+  .issue a {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Add a slight shadow */
+    background-color: #eee; /* Grey background color */
+    color: #094b65; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 10px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 1px;
+    font-size: 20px;
+  }
+
+  .modelproblems a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+  }
+  
+
+  .model {
+    display: block;
+    position: relative; 
+    color: #094b65;
+    font-size: 5vh;
+    text-align:start;
+    line-height: 0.9em;
+  }
+  .problemheader {
+        color: #094b65; /* Black text color */
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 50px;
+  }
+  .modelproblems a {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Add a slight shadow */
+  }
+  .issue {
+    padding-left: 50px;
+  }
+  
+ 
+/* Add your existing desktop styles here */
+
+/* Style for the hamburger menu icon in desktop view */
+.mobile-menu-icon {
+  display: none; /* Hide the icon in desktop view */
+}
+
+/* Style for the mobile menu in desktop view */
+.mobile-menu {
+  display: none; /* Hide the mobile menu in desktop view */
+}
+
+/* Add any additional desktop-specific styles */
+.background {
+  object-fit: cover;
+}
